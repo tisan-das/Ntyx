@@ -112,17 +112,17 @@ def totalCovered(jump,lcsaj,lines):
 # 				break
 # 	return (boolJump,boolLCSAJ)
 
-# def totalCovered(lcsaj,lines):
-# 	boolArr = []
-# 	for x in lines:
-# 		boolArr.append(False)
-# 	for tups in lcsaj:
-# 		for i in range(0,len(lines)):
-# 			j = i
-# 			if lines[j] == tups[0]:
-# 				while lines[j]+1==lines[j+1] and lines[j]!=tups[1]:
-# 					j += 1
-# 				if lines[j]==tups[1] and lines[j+1]==tups[2]:
-# 					boolArr[i] = True
-# 					break;
-# 	return boolArr
+ def totalCovered(lcsaj,lines):
+ 	boolArr = []
+ 	for x in lines:
+ 		boolArr.append(False)
+ 	for tups in lcsaj:
+ 		for i in range(0,len(lines)):
+ 			j = i
+ 			if lines[j] == tups[0]:
+ 				while lines[j]+1==lines[j+1] and lines[j]!=tups[1]:
+ 					j += 1
+ 				if lines[j]==tups[1] and lines[j+1]==tups[2]:
+ 					boolArr[i] = True
+ 					break;
+ 	return boolArr
